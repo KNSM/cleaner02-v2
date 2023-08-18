@@ -46,6 +46,9 @@ $(document).ready(function () {
     });
 
 
-    //video
+    //fancybox
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
 
 });
