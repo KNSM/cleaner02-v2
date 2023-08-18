@@ -101,3 +101,8 @@ gulp.task('start', gulp.series(
     gulp.parallel('html', 'scss', 'images', 'videos', 'fonts', 'js'),
     gulp.parallel('server', 'watch')
 ))
+
+gulp.task('build', gulp.series(
+    'clean',
+    gulp.parallel('html', 'scss', 'images', 'videos', 'fonts', 'js')
+))
