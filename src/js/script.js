@@ -18,6 +18,17 @@ $(document).ready(function () {
         nextArrow: $('.slider-video-reviews .slider-arrow-next'),
     });
 
+    $('.slider-video-reviews .slider__wrapper').on("beforeChange", function (){
+        var iframe = $(this).find('.slick-slide.slick-active .video').get(0);
+        var player = new Vimeo.Player(iframe);
+
+        player.getPaused().then(function(paused) {
+            if(!paused){
+                player.pause();
+            }
+        });
+    });
+
 
     //modals
     $(function () {
