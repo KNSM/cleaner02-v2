@@ -1,0 +1,15 @@
+.text {
+
+  &.text-gray {
+    font-size: 12px;
+    color: $grayColor;
+  }
+
+  &.text-white {
+    color: #fff;
+  }
+
+  &-nowrap {
+    white-space: nowrap;
+  }
+}
